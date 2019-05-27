@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basic Concepts | Shoperb for Developers</title>
+    <meta name="description" content="Theme &amp; App Development Resources">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.c7524749.css" as="style"><link rel="preload" href="/assets/js/app.db50ef6e.js" as="script"><link rel="preload" href="/assets/js/14.e5f8de7d.js" as="script"><link rel="prefetch" href="/assets/js/10.d477bdfa.js"><link rel="prefetch" href="/assets/js/11.9692677c.js"><link rel="prefetch" href="/assets/js/12.e2d91636.js"><link rel="prefetch" href="/assets/js/13.a72fb40f.js"><link rel="prefetch" href="/assets/js/15.b6af3c66.js"><link rel="prefetch" href="/assets/js/2.7974f97d.js"><link rel="prefetch" href="/assets/js/3.a6ce539e.js"><link rel="prefetch" href="/assets/js/4.cc9a2904.js"><link rel="prefetch" href="/assets/js/5.b8b612dc.js"><link rel="prefetch" href="/assets/js/6.a58e352c.js"><link rel="prefetch" href="/assets/js/7.154a9a74.js"><link rel="prefetch" href="/assets/js/8.25beaf6a.js"><link rel="prefetch" href="/assets/js/9.7d62ebfb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c7524749.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Shoperb for Developers</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/themes/getting-started.html" class="nav-link">Themes</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/themes/getting-started.html" class="nav-link">Themes</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/themes/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/themes/theme-basics.html" class="active sidebar-link">Basic Concepts</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#glossary" class="sidebar-link">Glossary</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#file-structure" class="sidebar-link">File Structure</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#template-markup-language" class="sidebar-link">Template markup language</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#assets" class="sidebar-link">Assets</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#config" class="sidebar-link">Config</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#layouts" class="sidebar-link">Layouts</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#templates" class="sidebar-link">Templates</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#translations" class="sidebar-link">Translations</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#presets" class="sidebar-link">Presets</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#sections" class="sidebar-link">Sections</a></li><li class="sidebar-sub-header"><a href="/themes/theme-basics.html#changelog" class="sidebar-link">Changelog</a></li></ul></li><li><a href="/themes/tags.html" class="sidebar-link">Liquid Tags</a></li><li><a href="/themes/filters.html" class="sidebar-link">Liquid Filters</a></li><li><a href="/themes/drops.html" class="sidebar-link">Liquid Drops</a></li><li><a href="/themes/sections.html" class="sidebar-link">Sections</a></li><li><a href="/themes/integrations.html" class="sidebar-link">Integrations</a></li><li><a href="/themes/examples.html" class="sidebar-link">Examples</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="basic-concepts"><a href="#basic-concepts" aria-hidden="true" class="header-anchor">#</a> Basic Concepts</h1> <div class="warning custom-block"><p class="custom-block-title">DEPRECIATION WARNING</p> <p>We are phasing out support for previous generation themes, which can now only be deployed using <a href="/themes/getting-started.html#shoperb-theme-editor">Shoperb Theme Editor</a>.</p> <p>It is strongly recommended that you create themes supported by Theme Builder configuration (covered in this guide). Your clients will love you for that.</p></div> <h2 id="glossary"><a href="#glossary" aria-hidden="true" class="header-anchor">#</a> Glossary</h2> <p>Here are some terms that will be used throughout this guide.</p> <h4 id="shoperb-theme-editor"><a href="#shoperb-theme-editor" aria-hidden="true" class="header-anchor">#</a> Shoperb Theme Editor</h4> <p>This is a command line tool built as a Ruby gem form. Use <code>$ shoperb --help</code> in console to get you started on understanding Shoperb command line tool.
+After bundle installation, use <code>$ shoperb init</code> to initialize a new theme. This command will</p> <h4 id="theme-builder"><a href="#theme-builder" aria-hidden="true" class="header-anchor">#</a> Theme Builder</h4> <p>Browser based user interface that allows our customers to create their own sites using sections based tool. Easy to use visual interface tool can be found
+on creation of ones' e-Commerce site on Shoperb platform. After signing up to Shoperb platform, Theme Builder is found on https://manage.shoperb.me/ ready
+for the customer to add products and clients, vendors and collections etc.</p> <h2 id="file-structure"><a href="#file-structure" aria-hidden="true" class="header-anchor">#</a> File Structure</h2> <p>Shoperb themes follow a rather strict folder and file structure. In the following example we are not including <code>.shoperb</code> file that will be created when you authenticate your project against a live Shoperb store and <strong>should not</strong> be committed into version control.</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├── assets
+|   ├── images
+|   ├── javascripts
+|   |   └── application.js
+|   ├── fonts
+|   └── stylesheets
+|   |   └── application.css.scss
+├── config
+|   ├── schema_translations
+|   |   ├── en-US.json
+|   |   └── et-EE.json
+|   ├── sections
+|   |   ├── header.json
+|   |   └── footer.json
+|   ├── settings_data.json
+|   ├── settings_schema.json
+|   └── spec.json
+├── layouts
+|   └── layout.liquid
+├── presets
+|   ├── preset-1.json
+|   └── preset-2.json
+├── sections
+|   ├── my-section-1.json
+|   └── my-section-2.json
+├── templates
+|   ├── index.liquid
+|   ├── cart.liquid
+|   └── page.liquid
+├── translations
+|   ├── en.json
+|   └── et.json
+└── CHANGELOG.md
+</code></pre></div><h2 id="template-markup-language"><a href="#template-markup-language" aria-hidden="true" class="header-anchor">#</a> Template markup language</h2> <p>For creating theme for Shoperb stores we use markup language Liquid, developed by Shopify.
+You can check out Liquid documentation by the following link: <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" target="_blank" rel="noopener noreferrer">Liquid documentation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>Every liquid template of the theme is supplied with a bunch of variables, which will be discussed in next chapters.</p> <h2 id="assets"><a href="#assets" aria-hidden="true" class="header-anchor">#</a> Assets</h2> <p>Assets in Shoperb themes are heavily inspired by how assets are managed in Ruby on Rails.</p> <p>Two manifest files — <code>application.js</code> and <code>application.css.scss</code> — are used to include all other relevant JavaScript and CSS/SCSS files.
+It is recommended that you use these files to include your assets in these files as it makes your life deploying a theme much easier.</p> <h3 id="javascripts"><a href="#javascripts" aria-hidden="true" class="header-anchor">#</a> JavaScripts</h3> <p>JavaScripts manifest is located at <code>/assets/javascripts/application.js</code></p> <p>We recommend serving only 1 javascript file on the page for the sake of speed of page load. However, for development purposes you are always free to break it down into several files. In the result 'application.js' file you can simply use 'require' directives, which are described below, for including content of other files.</p> <p>In the example below <code>require</code> includes the content of specified file into current one and <code>require_tree</code> includes content of all files in a specified directory to the current file.</p> <div class="language- extra-class"><pre class="language-text"><code>//= require jquery
+//= require path/to/other_file
+//= require_tree path/to/whole/directory
+//= require_tree .
+</code></pre></div><h3 id="stylesheets"><a href="#stylesheets" aria-hidden="true" class="header-anchor">#</a> Stylesheets</h3> <p>Stylesheets manifest is located at <code>/assets/stylesheets/application.css.scss</code></p> <p>We use SCSS variables throughout our themes to allow easy customization in Theme Builder.</p> <p>In the example below <code>require_self</code> simply includes content of current file.
+With this function you can define the order of included content.</p> <div class="language- extra-class"><pre class="language-text"><code>*= require nouislider
+*= require jquery-ui
+*= require relative/path/to/any/other/css
+*= require jquery-ui/datepicker
+*= require_self
+</code></pre></div><h2 id="config"><a href="#config" aria-hidden="true" class="header-anchor">#</a> Config</h2> <h3 id="spec-json"><a href="#spec-json" aria-hidden="true" class="header-anchor">#</a> spec.json</h3> <p>Located in <code>config/spec.json</code> we use this file to define meta data of the theme, like: author, year, name, handle, description. Some values in this file are <em>obligatory</em>:</p> <h3 id="spec-json-2"><a href="#spec-json-2" aria-hidden="true" class="header-anchor">#</a> spec.json</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;handle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;canvas&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Canvas&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Shoperb&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;year&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2017&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Canvas is a skeleton theme that can be used to start building custom Shoperb themes.&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;customizable_pages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;index&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;compile&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;stylesheets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;application.css&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;javascripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;application.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><table><thead><tr><th>Key</th> <th>Description</th></tr></thead> <tbody><tr><td>handle</td> <td>Theme handle must be a unique value on Shoperb platform. For example, there can be only one theme that has an handle <em><strong>canvas</strong></em> on Shoperb.</td></tr> <tr><td>name</td> <td>Theme name is a pretty display name for your theme.</td></tr> <tr><td>description</td> <td>Short description for your theme.</td></tr> <tr><td>author</td> <td>Your or your company name. This will be displayed in Shoperb Theme Store as who created this theme.</td></tr> <tr><td>year</td> <td>Year when the theme was initially created.</td></tr> <tr><td>version</td> <td>We use semantic versions pattern here.</td></tr> <tr><td>customizable_pages</td> <td>Template names that can be customized with Theme Builder.</td></tr> <tr><td>compile</td> <td>List of stylesheets and javascript assets that should be served directly on every page.</td></tr></tbody></table> <h3 id="settings-schema-json"><a href="#settings-schema-json" aria-hidden="true" class="header-anchor">#</a> settings_schema.json</h3> <p>Located in <code>config/settings_schema.json</code> this file is used to describe general options for the theme.
+This would include settings like colors, font family, font size, favicon, etc that would apply for the whole theme.
+You can think of it as of description of settings that apply for the whole theme layout.</p> <p>List of available settings is described in the table below:</p> <table><thead><tr><th>Key</th> <th>Format in the Theme Builder</th> <th>Options</th></tr></thead> <tbody><tr><td>color</td> <td>Color picker</td> <td>&quot;default&quot; value</td></tr> <tr><td>select</td> <td>Select dropdown</td> <td>&quot;options&quot; array with options: <br> <code>{handle: &quot;my-setting-name&quot;, value: &quot;my-setting-value&quot;}  </code> <br> &quot;default&quot; value</td></tr> <tr><td>number</td> <td>Number field</td> <td>&quot;min&quot;, &quot;max&quot;, &quot;default&quot;</td></tr> <tr><td>text</td> <td>Text field</td> <td>&quot;default&quot;</td></tr> <tr><td>font</td> <td>Select dropdown with font names</td> <td>&quot;options&quot; array with options: <br> <code>{ handle: &quot;my-font-setting-name&quot;, value: &quot;my-font-value&quot; } </code> <br> &quot;default&quot; value</td></tr> <tr><td>image</td> <td>Image picker</td> <td>&quot;default&quot; value</td></tr> <tr><td>toggle</td> <td>Toggle switcher</td> <td>&quot;default&quot; value. Accepts true/false values</td></tr></tbody></table> <h3 id="settings-data-json"><a href="#settings-data-json" aria-hidden="true" class="header-anchor">#</a> settings_data.json</h3> <p>Located in <code>config/settings_data.json</code> this file is used for defining actual settings values for the theme. The moment, when end-user will install the theme to the store, these settings will be applied as default settings.
+<code>settings_data.json</code> file defined general styling settings as well as section settings, which will be discussed in Chapter 'Sections'.</p> <p>Example of file:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;general&quot;: {
+    &quot;text_headings_color&quot;: &quot;#1B2026&quot;,
+    &quot;text_body_color&quot;: &quot;#A2A4A8&quot;,
+    &quot;text_sale_text_color&quot;: &quot;#1B2026&quot;,
+    &quot;text_link_color&quot;: &quot;#1B2026&quot;,
+    &quot;heading_scaling&quot;: &quot;1.25&quot;,
+    &quot;square_images&quot;: false
+  },
+  &quot;sections&quot;: {
+    &quot;hero-1&quot;: {
+      &quot;type&quot;: &quot;image_with_text_overlay&quot;,
+      &quot;settings&quot;: {
+        &quot;image_alignment&quot;: &quot;center&quot;,
+        &quot;title&quot;: &quot;Large image with text&quot;,
+        &quot;text&quot;: &quot;This area here is good getting the attention of your customers.&quot;,
+        &quot;text_size&quot;: &quot;medium&quot;,
+        &quot;section_height&quot;: &quot;medium&quot;,
+        &quot;section_width&quot;: &quot;limited&quot;,
+        &quot;button_label&quot;: &quot;Click here!&quot;,
+        &quot;button_link&quot;: &quot;&quot;
+      },
+      &quot;id&quot;: &quot;hero-1&quot;
+    }
+  },
+  &quot;content_for_index&quot;: [
+    &quot;hero-1&quot;
+  ]
+}
+
+</code></pre></div><h2 id="layouts"><a href="#layouts" aria-hidden="true" class="header-anchor">#</a> Layouts</h2> <p>Shoperb provides set of snippets, which should be used within the theme. These snippets are described in the table below:</p> <h4 id="shoperb-header"><a href="#shoperb-header" aria-hidden="true" class="header-anchor">#</a> shoperb_header</h4> <p>Used to include any scripts (integrations) that should go in between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags.</p> <h4 id="shoperb-footer"><a href="#shoperb-footer" aria-hidden="true" class="header-anchor">#</a> shoperb_footer</h4> <p>Auto-includes selected plugins (inside the body)</p> <h4 id="shoperb-stylesheets"><a href="#shoperb-stylesheets" aria-hidden="true" class="header-anchor">#</a> shoperb_stylesheets</h4> <p>Includes stylesheets (goes into head)</p> <p>NB! Stylesheets (with settings!) MUST be included excusively using snippet shoperb_stylesheets. (Small explanation why: because they are included in a different way for a regular view and preview mode. And this snippet handles it the way it should be handled. )</p> <div class="language-twig extra-class"><pre class="language-twig"><code><span class="token other"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span></span>
+    <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">include</span></span> <span class="token string"><span class="token punctuation">'</span>shoperb_stylesheets<span class="token punctuation">'</span></span><span class="token punctuation">,</span> <span class="token property">stylesheets</span><span class="token punctuation">:</span> <span class="token string"><span class="token punctuation">'</span>application.css<span class="token punctuation">'</span></span> <span class="token operator">|</span> <span class="token property">split</span><span class="token punctuation">:</span> <span class="token string"><span class="token punctuation">'</span>|<span class="token punctuation">'</span></span> <span class="token rd"><span class="token punctuation">%}</span></span></span>
+    <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">include</span></span> <span class="token string"><span class="token punctuation">'</span>shoperb_header<span class="token punctuation">'</span></span> <span class="token rd"><span class="token punctuation">%}</span></span></span>
+  <span class="token other"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span></span>
+     <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">include</span></span> <span class="token string"><span class="token punctuation">'</span>shoperb_footer<span class="token punctuation">'</span></span> <span class="token rd"><span class="token punctuation">%}</span></span></span>
+  <span class="token other"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></span>
+</code></pre></div><h2 id="templates"><a href="#templates" aria-hidden="true" class="header-anchor">#</a> Templates</h2> <p>Every theme should define the following set of templates:</p> <table><thead><tr><th>Page</th> <th>Description</th></tr></thead> <tbody><tr><td>index.liquid</td> <td>Store main page</td></tr> <tr><td>login.liquid</td> <td>Login page</td></tr> <tr><td>signup.liquid</td> <td>Registration page</td></tr> <tr><td>account.liquid</td> <td>User account page</td></tr> <tr><td>billing_payment_method</td> <td>User credit card show page</td></tr> <tr><td>billing_payment_methods</td> <td>Page of user credit card collections</td></tr> <tr><td>billing_subscription</td> <td>Page to show/edit user subscription</td></tr> <tr><td>billing_subscription_plans</td> <td>Page of all subscription plans</td></tr> <tr><td>billing_subscriptions</td> <td>Page of user subscription collections</td></tr> <tr><td>blog_post.liquid</td> <td>Blog post page</td></tr> <tr><td>blog_posts.liquid</td> <td>Blog page</td></tr> <tr><td>cart.liquid</td> <td>User cart page</td></tr> <tr><td>order.liquid</td> <td>User order page</td></tr> <tr><td>orders.liquid</td> <td>Page of all user orders</td></tr> <tr><td>product.liquid</td> <td>Product page</td></tr> <tr><td>products.liquid</td> <td>Page of all store products</td></tr> <tr><td>category.liquid</td> <td>Product category page</td></tr> <tr><td>collection.liquid</td> <td>Product collection page</td></tr> <tr><td>collections.liquid</td> <td>Page of all product collections</td></tr> <tr><td>page.liquid</td> <td>Store custom page template</td></tr> <tr><td>password_change.liquid</td> <td>Password change page</td></tr> <tr><td>password_request.liquid</td> <td>Password change request page</td></tr> <tr><td>passwrord_token_sent.liquid</td> <td>Password change request sent page</td></tr> <tr><td>reviews.liquid</td> <td>Product reviews page</td></tr> <tr><td>search.liquid</td> <td>Search page</td></tr> <tr><td>not_found.liquid</td> <td>&quot;Not found (404)&quot; page</td></tr></tbody></table> <p>As you can see, every template defined every page of store, that store can have.
+Check out examples of templates of our skeleton theme &quot;Canvas&quot; here: <a href="https://github.com/shoperb/theme-canvas/tree/master/templates" target="_blank" rel="noopener noreferrer">Canvas templates<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Templates can name names with or without an underscore in the beginning. According to Liquid naming conventions, the template with an underscore in the beginning is a &quot;partial&quot; of a template, meaning, it is a reusable part of template, which can be included into other templates.</p> <ul><li>Partials are files containing chunks of reusable code.</li> <li>They name start with underscore.</li> <li>They have the .liquid extension.</li> <li>They are most often used for code that appears on more than one page but not across the entire theme.</li> <li>Partials are included in a template using the Liquid tag include e.g. <code>{% include ‘snippet name’ %}</code>.</li> <li>You do not need to append the .liquid extension when referencing the partial name.</li> <li>When a partial is included it will have access to the variables within its parent template.</li></ul> <p>Partials are extremely useful and allow you to keep repeated code in a single file.</p> <p>Example:</p> <div class="language- extra-class"><pre class="language-text"><code>{% for product in paginate.collection %}
+  {% include 'product' with 'page' %}
+{% endfor %}
+&lt;/div&gt;
+{% include 'pagination' %}
+</code></pre></div><h2 id="translations"><a href="#translations" aria-hidden="true" class="header-anchor">#</a> Translations</h2> <p>'Translations' folder includes all translations of your theme to languages, which it supports.</p> <ul><li>Locale files have <code>.json</code> extension</li> <li>Locale files are named with locale name</li> <li>Locale file content is a json with a single root of self-titled locale.</li></ul> <p>Example:</p> <h3 id="en-json"><a href="#en-json" aria-hidden="true" class="header-anchor">#</a> en.json</h3> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;en&quot;:
+    {
+      &quot;product.unavailable&quot;: &quot;Product is currently unavailable&quot;,
+      &quot;product.unavailable_short&quot;: &quot;Currently unavailable&quot;,
+      &quot;product.quantity&quot;: &quot;Quantity&quot;,
+      &quot;product.add_to_cart&quot;: &quot;Add to Cart&quot;,
+      &quot;product.recommended&quot;: &quot;You might also like&quot;,
+      &quot;product.sku&quot;: &quot;SKU&quot;,
+      &quot;product.select&quot;: &quot;Select&quot;,
+      &quot;product.compare_at&quot;: &quot;Market price&quot;
+    }
+  }
+}
+</code></pre></div><p>In the same manner you can define files <code>fr.json</code>, <code>et.json</code>, <code>ru.json</code> or any other language you want to support.</p> <p>Having translations defined this way allows you to access the correspondent string in your template in the following way:</p> <div class="language- extra-class"><pre class="language-text"><code>{{'product.recommended' | t}}
+</code></pre></div><p>Where <code>t</code> is an alias for <code>translate</code> filter of Liquid.
+You can read more about Liquid filters <a href="/themes/filters.html">here</a>.</p> <h2 id="presets"><a href="#presets" aria-hidden="true" class="header-anchor">#</a> Presets</h2> <p>Presets files store possible values for styling settings. Presets files are not obligatory in the folder, however, they can improve end-user experience of theme customizing a lot.</p> <p>Upon creating a theme you can define a preset &quot;Dark&quot;, which would contain a set of settings values, which would create beautifl dark-colored version of your theme. In addition, you could create a preset &quot;Art&quot;, where you could put a set a settings values, which would make your theme look artistics and colorful, and so on. Such presets of settings could give to end-user a broader overview of how it is possible to customize the theme.</p> <p>Presets should be stored in the folder <code>/presets</code>.</p> <p>The example of the preset file:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;handle&quot;: &quot;dark&quot;,
+  &quot;default&quot;: false,
+  &quot;settings&quot;: {
+    &quot;text_headings_color&quot;: &quot;#FFFFFF&quot;,
+    &quot;text_body_color&quot;: &quot;#D9D9D9&quot;,
+    &quot;text_sale_text_color&quot;: &quot;#D6A356&quot;,
+    &quot;text_link_color&quot;: &quot;#FFFFFF&quot;,
+    &quot;buttons_primary_button_background_color&quot;: &quot;#EF5948&quot;,
+    &quot;layout_background_color&quot;: &quot;#0D0909&quot;,
+    &quot;layout_border_color&quot;: &quot;#CED3D9&quot;,
+    &quot;layout_secondary_background_color&quot;: &quot;#262322&quot;,
+    &quot;layout_header_footer_background_color&quot;: &quot;#0D0909&quot;,
+    &quot;image_overlay_color&quot;: &quot;#FFFFFF&quot;,
+    &quot;image_overlay_background&quot;: &quot;#262322&quot;,
+    &quot;image_overlay_opacity&quot;: &quot;0.6&quot;,
+    &quot;body_font_family&quot;: &quot;Open Sans&quot;,
+    &quot;heading_font_family&quot;: &quot;Hind&quot;,
+  }
+}
+</code></pre></div><h2 id="sections"><a href="#sections" aria-hidden="true" class="header-anchor">#</a> Sections</h2> <p>Shoperb themes have a folder <code>sections</code>, which contains reusable fragments of templates, which end-user can assemble together and build a page in the Theme Builder.</p> <ul><li>Sections have .liquid extension</li> <li>Sections can be generic (dynamic) or not generic (static). Generic sections (dynamic) can be added to any page. Not generic sections (also can be called 'static') cannot be added or removed by end-user. However, they are an integral part of a template. Example: header, footer.</li></ul> <h3 id="static-or-non-generic-sections"><a href="#static-or-non-generic-sections" aria-hidden="true" class="header-anchor">#</a> Static (or non-generic sections)</h3> <p>Static sections are included to template or layout with a <code>section</code> tag:</p> <div class="language- extra-class"><pre class="language-text"><code>{% section 'header' %}
+</code></pre></div><p>End-user will see this section in Theme Builder and will be able to custmize it. However, user won't be able to add one more header or remove an existing one.</p> <h3 id="dynamic-sections"><a href="#dynamic-sections" aria-hidden="true" class="header-anchor">#</a> Dynamic sections</h3> <p>Dynamic sections can be added to the template using tag <code>content_for_template</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>{% content_for_template %}
+</code></pre></div><p>More about sections read in a <a href="/themes/sections.html">Chapter &quot;Sections&quot;</a>.</p> <h2 id="changelog"><a href="#changelog" aria-hidden="true" class="header-anchor">#</a> Changelog</h2></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/themes/getting-started.html" class="prev">
+          Getting Started
+        </a></span> <span class="next"><a href="/themes/tags.html">
+          Liquid Tags
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.db50ef6e.js" defer></script><script src="/assets/js/14.e5f8de7d.js" defer></script>
+  </body>
+</html>

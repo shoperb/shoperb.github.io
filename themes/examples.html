@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Examples | Shoperb for Developers</title>
+    <meta name="description" content="Theme &amp; App Development Resources">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.c7524749.css" as="style"><link rel="preload" href="/assets/js/app.db50ef6e.js" as="script"><link rel="preload" href="/assets/js/5.b8b612dc.js" as="script"><link rel="prefetch" href="/assets/js/10.d477bdfa.js"><link rel="prefetch" href="/assets/js/11.9692677c.js"><link rel="prefetch" href="/assets/js/12.e2d91636.js"><link rel="prefetch" href="/assets/js/13.a72fb40f.js"><link rel="prefetch" href="/assets/js/14.e5f8de7d.js"><link rel="prefetch" href="/assets/js/15.b6af3c66.js"><link rel="prefetch" href="/assets/js/2.7974f97d.js"><link rel="prefetch" href="/assets/js/3.a6ce539e.js"><link rel="prefetch" href="/assets/js/4.cc9a2904.js"><link rel="prefetch" href="/assets/js/6.a58e352c.js"><link rel="prefetch" href="/assets/js/7.154a9a74.js"><link rel="prefetch" href="/assets/js/8.25beaf6a.js"><link rel="prefetch" href="/assets/js/9.7d62ebfb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c7524749.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Shoperb for Developers</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/themes/getting-started.html" class="nav-link">Themes</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/themes/getting-started.html" class="nav-link">Themes</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/themes/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/themes/theme-basics.html" class="sidebar-link">Basic Concepts</a></li><li><a href="/themes/tags.html" class="sidebar-link">Liquid Tags</a></li><li><a href="/themes/filters.html" class="sidebar-link">Liquid Filters</a></li><li><a href="/themes/drops.html" class="sidebar-link">Liquid Drops</a></li><li><a href="/themes/sections.html" class="sidebar-link">Sections</a></li><li><a href="/themes/integrations.html" class="sidebar-link">Integrations</a></li><li><a href="/themes/examples.html" class="active sidebar-link">Examples</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/themes/examples.html#vendors" class="sidebar-link">Vendors</a></li></ul></li></ul> </div> <div class="page"> <div class="content"><h1 id="examples"><a href="#examples" aria-hidden="true" class="header-anchor">#</a> Examples</h1> <h2 id="vendors"><a href="#vendors" aria-hidden="true" class="header-anchor">#</a> Vendors</h2> <h3 id="list-all-vendors"><a href="#list-all-vendors" aria-hidden="true" class="header-anchor">#</a> List all vendors</h3> <div class="language-twig extra-class"><pre class="language-twig"><code>  <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">if</span></span> <span class="token property">vendors</span><span class="token punctuation">.</span><span class="token property">any</span><span class="token operator">?</span> <span class="token rd"><span class="token punctuation">%}</span></span></span> <span class="token other">// Check if there are any Vendors added to the store
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span></span>
+    <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">for</span></span> <span class="token property">vendor</span> <span class="token operator">in</span> <span class="token property">vendors</span> <span class="token rd"><span class="token punctuation">%}</span></span></span> <span class="token other">// For loop to query all vendors that are available
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span></span>
+        <span class="token tag"><span class="token ld"><span class="token punctuation">{{</span></span> <span class="token property">vendor</span><span class="token punctuation">.</span><span class="token property">name</span> <span class="token rd"><span class="token punctuation">}}</span></span></span> <span class="token other">// Display a vendor by a name
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span>
+    <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">endfor</span></span> <span class="token rd"><span class="token punctuation">%}</span></span></span>
+    <span class="token other"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></span>
+  <span class="token tag"><span class="token ld"><span class="token punctuation">{%</span> <span class="token keyword">endif</span></span> <span class="token rd"><span class="token punctuation">%}</span></span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Brand #1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Brand #2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Brand #3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="multi-level-dropdown-navigation"><a href="#multi-level-dropdown-navigation" aria-hidden="true" class="header-anchor">#</a> Multi level dropdown navigation</h3> <div class="language-html extra-class"><pre class="language-html"><code>{% if menu.links.any? or menu.children.any? %}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  {% assign collection = menu.root_links %}
+  {% if menu.children.any? %}
+    {% assign collection = menu.children %}
+  {% endif %}
+
+  {% for link in collection %}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+    {% if link.url %}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{link.url}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{link.name}}
+        {% if link.children.any? %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon-arrow-dark<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>{% endif %}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    {% else %}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>
+        {{link.name}}
+        {% if link.children.any? %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon-arrow-dark<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>{% endif %}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    {% endif %}
+
+    {% if link.children.any? %}
+      {% include 'menu' with link %}
+    {% endif %}
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  {% endfor %}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+{% endif %}
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/themes/integrations.html" class="prev">
+          Integrations
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.db50ef6e.js" defer></script><script src="/assets/js/5.b8b612dc.js" defer></script>
+  </body>
+</html>
